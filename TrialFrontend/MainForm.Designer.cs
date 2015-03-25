@@ -66,6 +66,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.openDbDialog = new System.Windows.Forms.OpenFileDialog();
             this.assignFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.toolStripDropDownButton2 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -75,8 +77,9 @@
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel,
-            this.toolStripDropDownButton1});
-            this.statusStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.toolStripStatusLabel1,
+            this.toolStripDropDownButton1,
+            this.toolStripDropDownButton2});
             this.statusStrip1.Location = new System.Drawing.Point(0, 388);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(813, 22);
@@ -100,6 +103,7 @@
             this.changeDBToolStripMenuItem1});
             this.toolStripDropDownButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton1.Image")));
             this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripDropDownButton1.MergeIndex = -2;
             this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
             this.toolStripDropDownButton1.Size = new System.Drawing.Size(78, 20);
             this.toolStripDropDownButton1.Text = "DB Actions";
@@ -107,21 +111,21 @@
             // changeUserToolStripMenuItem
             // 
             this.changeUserToolStripMenuItem.Name = "changeUserToolStripMenuItem";
-            this.changeUserToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.changeUserToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.changeUserToolStripMenuItem.Text = "Change User";
             this.changeUserToolStripMenuItem.Click += new System.EventHandler(this.changeUserToolStripMenuItem_Click);
             // 
             // refreshToolStripMenuItem
             // 
             this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
-            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.refreshToolStripMenuItem.Text = "Refresh";
             this.refreshToolStripMenuItem.Click += new System.EventHandler(this.refreshToolStripMenuItem_Click);
             // 
             // changeDBToolStripMenuItem1
             // 
             this.changeDBToolStripMenuItem1.Name = "changeDBToolStripMenuItem1";
-            this.changeDBToolStripMenuItem1.Size = new System.Drawing.Size(141, 22);
+            this.changeDBToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.changeDBToolStripMenuItem1.Text = "Change DB";
             this.changeDBToolStripMenuItem1.Click += new System.EventHandler(this.changeDBToolStripMenuItem1_Click);
             // 
@@ -423,6 +427,25 @@
             // 
             this.assignFileDialog.Filter = "Word Documents|*.docx|Word Documents|*.doc|All Files|*.*";
             // 
+            // toolStripDropDownButton2
+            // 
+            this.toolStripDropDownButton2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripDropDownButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripDropDownButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton2.Image")));
+            this.toolStripDropDownButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripDropDownButton2.MergeIndex = -3;
+            this.toolStripDropDownButton2.Name = "toolStripDropDownButton2";
+            this.toolStripDropDownButton2.ShowDropDownArrow = false;
+            this.toolStripDropDownButton2.Size = new System.Drawing.Size(16, 20);
+            this.toolStripDropDownButton2.Text = "?";
+            this.toolStripDropDownButton2.Click += new System.EventHandler(this.toolStripDropDownButton2_Click);
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(460, 17);
+            this.toolStripStatusLabel1.Spring = true;
+            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -485,6 +508,8 @@
         private System.Windows.Forms.OpenFileDialog assignFileDialog;
         private System.Windows.Forms.TextBox textBoxDetails;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton2;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
     }
 }
 

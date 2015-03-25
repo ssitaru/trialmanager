@@ -103,6 +103,8 @@
             this.assignFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.saveDbDialog = new System.Windows.Forms.SaveFileDialog();
             this.moveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripDropDownButton2 = new System.Windows.Forms.ToolStripDropDownButton();
             this.statusStrip.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -117,8 +119,9 @@
             // 
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel,
-            this.toolStripDropDownButton1});
-            this.statusStrip.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.toolStripStatusLabel1,
+            this.toolStripDropDownButton1,
+            this.toolStripDropDownButton2});
             this.statusStrip.Location = new System.Drawing.Point(0, 513);
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.Size = new System.Drawing.Size(882, 22);
@@ -149,21 +152,21 @@
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
             this.newToolStripMenuItem.Text = "New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // changeDbToolStripMenuItem
             // 
             this.changeDbToolStripMenuItem.Name = "changeDbToolStripMenuItem";
-            this.changeDbToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.changeDbToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
             this.changeDbToolStripMenuItem.Text = "Change";
             this.changeDbToolStripMenuItem.Click += new System.EventHandler(this.changeDbToolStripMenuItem_Click);
             // 
             // refreshToolStripMenuItem
             // 
             this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
-            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
             this.refreshToolStripMenuItem.Text = "Refresh";
             this.refreshToolStripMenuItem.Click += new System.EventHandler(this.refreshToolStripMenuItem_Click);
             // 
@@ -871,6 +874,23 @@
             // 
             this.moveFileDialog.Filter = "Word Document|*.docx|Word Document|*.doc|All Files|*.*";
             // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(703, 17);
+            this.toolStripStatusLabel1.Spring = true;
+            // 
+            // toolStripDropDownButton2
+            // 
+            this.toolStripDropDownButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripDropDownButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton2.Image")));
+            this.toolStripDropDownButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripDropDownButton2.Name = "toolStripDropDownButton2";
+            this.toolStripDropDownButton2.ShowDropDownArrow = false;
+            this.toolStripDropDownButton2.Size = new System.Drawing.Size(16, 20);
+            this.toolStripDropDownButton2.Text = "?";
+            this.toolStripDropDownButton2.Click += new System.EventHandler(this.toolStripDropDownButton2_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -976,6 +996,8 @@
         private System.Windows.Forms.OpenFileDialog assignFileDialog;
         private System.Windows.Forms.SaveFileDialog saveDbDialog;
         private System.Windows.Forms.SaveFileDialog moveFileDialog;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton2;
     }
 }
 

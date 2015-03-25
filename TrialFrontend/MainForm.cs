@@ -639,5 +639,13 @@ namespace TrialFrontend
             FilterBlock = (TrialBlock)comboBoxBlockFilter.SelectedItem;
             UpdateFromDb();
         }
+
+        private void toolStripDropDownButton2_Click(object sender, EventArgs e)
+        {
+            AboutDialog ad = new AboutDialog();
+            ad.ShowDialog();
+
+            listViewTrials.Focus();
+        }
     }
 }

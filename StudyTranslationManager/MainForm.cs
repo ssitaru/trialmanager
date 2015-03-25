@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using StudyTranslationManager.dialogs;
 using System.Text.RegularExpressions;
+using TranslationManagerCommon;
 
 namespace StudyTranslationManager
 {
@@ -910,6 +911,12 @@ namespace StudyTranslationManager
             TrySelectItemsInTrialListViewFromDetail();
         }
         #endregion
+
+        private void toolStripDropDownButton2_Click(object sender, EventArgs e)
+        {
+            AboutDialog ad = new AboutDialog();
+            ad.ShowDialog();
+        }
 
         
 

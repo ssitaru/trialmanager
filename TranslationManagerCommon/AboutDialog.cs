@@ -21,5 +21,10 @@ namespace TranslationManagerCommon
         {
             System.Diagnostics.Process.Start("http://creativecommons.org/licenses/by/4.0/");
         }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start(linkLabel2.Text);
+        }
     }
 }
